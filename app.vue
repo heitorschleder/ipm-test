@@ -67,7 +67,7 @@ const onSubmit = form.handleSubmit((values) => {
       </div>
       <div class="flex flex-col p-10 xl:p-5 xl:max-w-[50rem] xl:items-center xl:justify-center">
         <h1 class="allTitle text-center mb-3 xl:text-start">Lorem ipsum dolor sit amet.</h1>
-        <p class="allfont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, consectetur commodi
+        <p class="text-sm sm:text-xl md:text-2xl xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, consectetur commodi
           optio ipsam ex incidunt. Repellendus nostrum, tempore, voluptatum aperiam pariatur minus iure illum
           excepturi blanditiis aspernatur rerum aliquid laudantium. Lorem ipsum dolor sit amet consectetur adipisicing
           elit. Architecto, consectetur commodi optio ipsam ex incidunt. Repellendus nostrum, tempore, voluptatum
