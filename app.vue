@@ -33,28 +33,27 @@ const onSubmit = form.handleSubmit((values) => {
 
 <template>
   <section>
-
     <Head>
       <Title>IPM Test</Title>
       <link rel="icon" href="public/favicon.png" type="image/x-icon" />
     </Head>
     <!-- Um cabeçalho com o logo e um menu de navegação. -->
     <div id="navegator" class="flex relative justify-between p-5 items-center bg-red-500 text-slate-50">
-      <div class="items-start">
+      <div class="items-start mr-2">
         <a href="https://www.ipm.com.br/"><img
             src="https://www.ipm.com.br/wp-content/uploads/2023/10/logo-ipm-white.svg" alt=""></a>
       </div>
       <div class="items-center">
         <ul class="allfont flex space-x-5">
-          <li class="flex space-x-0 items-center justify-center hover:font-bold duration-300">
+          <li class="navItem">
             <img class="size-5" src="./public/point.png" alt="">
             <a href="#MainContent">Content</a>
           </li>
-          <li class="flex space-x-0 items-center justify-center hover:font-bold duration-300">
+          <li class="navItem">
             <img class="size-5" src="./public/point.png" alt="">
             <a href="#Forms">Form</a>
           </li>
-          <li class="flex space-x-0 items-center justify-center hover:font-bold duration-300">
+          <li class="navItem">
             <img class="size-5" src="./public/point.png" alt="">
             <a href="#Footer">Socials</a>
           </li>
@@ -131,9 +130,8 @@ const onSubmit = form.handleSubmit((values) => {
     </div>
     <!-- Um rodapé com links para redes sociais. -->
     <footer id="Footer">
-      <div class="flex flex-row justify-center space-x-10 items-center h-full bg-red-500 text-center text-slate-50 p-3">
-        <p class="allfont">Made by Heitor Schleder</p>
-        <ul class="flex flex-row justify-center items-center space-x-0 sm:space-x-4">
+      <div class="flex flex-row justify-center  items-center h-full bg-red-500 text-center text-slate-50 p-3">
+        <ul class="flex flex-row justify-center items-center space-x-5 sm:space-x-4">
           <li class="socialIcon"><a
               href="https://www.facebook.com/ipmsistemas/"><img src="./public/brand-facebook.png" alt="facebook"></a>
           </li>
@@ -155,11 +153,16 @@ const onSubmit = form.handleSubmit((values) => {
   </section>
 </template>
 <style>
+
 .imageMain {
   max-width: 40rem;
   max-height: 40rem;
   min-width: 20rem;
   min-height: 20rem;
+}
+
+.navItem {
+  @apply flex space-x-0 items-center justify-center hover:font-bold duration-300
 }
 
 .allfont {
