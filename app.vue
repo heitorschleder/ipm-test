@@ -122,7 +122,7 @@ const onSubmit = form.handleSubmit((values) => {
             </div>
           </FormField>
           <div class="flex flex-row justify-end">
-            <Button class="bg-red-600 hover:bg-red-800 hover:animate-bounce" type="submit">
+            <Button class="buttonSend bg-red-600 hover:bg-red-800" type="submit">
               Enviar
             </Button>
           </div>
@@ -168,6 +168,10 @@ const onSubmit = form.handleSubmit((values) => {
 
 .socialIcon {
   @apply h-[35px] w-[35px] sm:h-[50px] sm:w-[50px] border rounded-xl hover:animate-pulse
+}
+
+.buttonSend {
+  border-radius: 4px 10px;
 }
 
 .allTitle {
