@@ -44,7 +44,7 @@ const onSubmit = form.handleSubmit((values) => {
             src="https://www.ipm.com.br/wp-content/uploads/2023/10/logo-ipm-white.svg" alt=""></a>
       </div>
       <div class="items-center">
-        <ul class="allfont flex space-x-5">
+        <ul class="text-sm sm:text-xl md:text-2xl xl:text-2xl flex space-x-5">
           <li class="navItem">
             <img class="size-5" src="./public/point.png" alt="">
             <a href="#MainContent">Content</a>
@@ -75,7 +75,7 @@ const onSubmit = form.handleSubmit((values) => {
       </div>
     </div>
     <!-- Uma seção de formulários contendo campos para nome, e-mail, mensagem e um botão de envio. -->
-    <div id="Forms" class="p-10 w-full flex flex-row justify-center items-center">
+    <div id="Forms" class="p-5 flex flex-row justify-center items-center">
       <div class="flex flex-row justify-center items-center">
         <form @submit="onSubmit" class="">
           <FormField v-slot="{ componentField }" name="username">
