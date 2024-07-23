@@ -48,15 +48,15 @@ const onSubmit = form.handleSubmit((values) => {
         <ul class="allfont flex space-x-5">
           <li class="flex space-x-0 items-center justify-center hover:font-bold duration-300">
             <img class="size-5" src="./public/point.png" alt="">
-            <a href="#MainContent">Conteúdo</a>
+            <a href="#MainContent">Content</a>
           </li>
           <li class="flex space-x-0 items-center justify-center hover:font-bold duration-300">
             <img class="size-5" src="./public/point.png" alt="">
-            <a href="#Forms">Formulário</a>
+            <a href="#Forms">Form</a>
           </li>
           <li class="flex space-x-0 items-center justify-center hover:font-bold duration-300">
             <img class="size-5" src="./public/point.png" alt="">
-            <a href="#Footer">Redes Sociais</a>
+            <a href="#Footer">Socials</a>
           </li>
         </ul>
       </div>
@@ -83,12 +83,12 @@ const onSubmit = form.handleSubmit((values) => {
             <div class="flex flex-col justify-center items-center md:flex-row">
               <div class="flex flex-col">
                 <FormItem>
-                  <FormLabel class="allfont">Nome</FormLabel>
+                  <FormLabel class="allfont">Name</FormLabel>
                   <FormControl class="w-[20rem]">
                     <Input class="bg-slate-100" type="text" placeholder="Heitor Schleder" v-bind="componentField" />
                   </FormControl>
                   <FormDescription>
-                    Escreva seu nome
+                    Write your name
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
@@ -99,7 +99,7 @@ const onSubmit = form.handleSubmit((values) => {
                       <Input class="bg-slate-100" type="text" placeholder="heitor@gmail.com" v-bind="componentField" />
                     </FormControl>
                     <FormDescription>
-                      Escreva seu e-mail
+                      Write your e-mail
                     </FormDescription>
                     <FormMessage />
                   </FormItem>
@@ -108,12 +108,12 @@ const onSubmit = form.handleSubmit((values) => {
               <div class="mt-2 md:ml-5">
                 <FormField v-slot="{ componentField }" name="usermessage">
                   <FormItem>
-                    <FormLabel class="allfont">Mensagem</FormLabel>
+                    <FormLabel class="allfont">Message</FormLabel>
                     <FormControl class="h-[10rem] w-[20rem]">
                       <Input class="bg-slate-100" type="text" placeholder="..." v-bind="componentField" />
                     </FormControl>
                     <FormDescription>
-                      Escreva uma mensagem
+                      Write a message!
                     </FormDescription>
                     <FormMessage />
                   </FormItem>
@@ -133,20 +133,20 @@ const onSubmit = form.handleSubmit((values) => {
     <footer id="Footer">
       <div class="flex flex-row justify-center space-x-10 items-center h-full bg-red-500 text-center text-slate-50 p-3">
         <p class="allfont">Made by Heitor Schleder</p>
-        <ul class="flex flex-row justify-center items-center space-x-4">
-          <li class="socialIcon border rounded-xl hover:animate-pulse"><a
+        <ul class="flex flex-row justify-center items-center space-x-0 sm:space-x-4">
+          <li class="socialIcon"><a
               href="https://www.facebook.com/ipmsistemas/"><img src="./public/brand-facebook.png" alt="facebook"></a>
           </li>
-          <li class="socialIcon border rounded-xl hover:animate-pulse"><a
+          <li class="socialIcon"><a
               href="https://www.instagram.com/ipmsistemas/"><img src="./public/brand-instagram.png" alt="instagram"></a>
           </li>
-          <li class="socialIcon border rounded-xl hover:animate-pulse"><a
+          <li class="socialIcon "><a
               href="https://www.youtube.com/channel/UC6qR6SivTwGZGKbBz6tmJsQ"><img src="./public/brand-youtube.png"
                 alt="youtube"></a></li>
-          <li class="socialIcon border rounded-xl hover:animate-pulse"><a
+          <li class="socialIcon"><a
               href="https://www.linkedin.com/company/ipmsistemas/"><img src="./public/brand-linkedin.png"
                 alt="linkedIn"></a></li>
-          <li class="socialIcon border rounded-xl hover:animate-pulse"><a href="https://twitter.com/ipmsistemas"><img
+          <li class="socialIcon"><a href="https://twitter.com/ipmsistemas"><img
                 src="./public/brand-x.png" alt="x"></a>
           </li>
         </ul>
@@ -167,8 +167,7 @@ const onSubmit = form.handleSubmit((values) => {
 }
 
 .socialIcon {
-  height: 50px;
-  width: 50px;
+  @apply h-[35px] w-[35px] sm:h-[50px] sm:w-[50px] border rounded-xl hover:animate-pulse
 }
 
 .allTitle {
