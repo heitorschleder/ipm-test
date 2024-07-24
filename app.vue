@@ -3,6 +3,9 @@ import { useForm } from 'vee-validate'
 import { toTypedSchema } from '@vee-validate/zod'
 import * as z from 'zod'
 
+import Footer from '@/components/FooterSection'
+import Nav from '@/components/NavSection'
+
 import { Button } from '@/components/ui/button'
 import {
   FormControl,
@@ -29,35 +32,16 @@ const form = useForm({
 const onSubmit = form.handleSubmit((values) => {
   console.log('Form enviado', values)
 })
+
 </script>
+
 <template>
   <section>
-
     <Head>
       <Title>IPM Test</Title>
       <link rel="icon" href="public/favicon.png" type="image/x-icon" />
     </Head>
-    <nav id="navegator">
-      <div class="flex justify-between p-5 items-center bg-red-500 text-slate-50">
-        <div class="items-start mr-2">
-          <a href="https://www.ipm.com.br/"><img
-              src="https://www.ipm.com.br/wp-content/uploads/2023/10/logo-ipm-white.svg" alt=""></a>
-        </div>
-        <div class="items-center">
-          <ul class="text-sm sm:text-xl md:text-2xl xl:text-2xl flex space-x-5">
-            <li class="navItem">
-              <a href="#MainContent">Content</a>
-            </li>
-            <li class="navItem">
-              <a href="#Forms">Form</a>
-            </li>
-            <li class="navItem">
-              <a href="#Footer">Socials</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <NavSection />
     <section id="MainContent">
       <div class="p-5 flex flex-col xl:flex-row xl:justify-center xl:space-x-10">
         <div class="flex justify-center">
@@ -130,24 +114,7 @@ const onSubmit = form.handleSubmit((values) => {
         </div>
       </div>
     </section>
-    <footer id="Footer">
-      <div class="flex flex-row justify-center  items-center h-full bg-red-500 text-center text-slate-50 p-3">
-        <ul class="flex flex-row justify-center items-center space-x-5 sm:space-x-4">
-          <li class="socialIcon"><a href="https://www.facebook.com/ipmsistemas/"><img src="./public/brand-facebook.png"
-                alt="facebook"></a>
-          </li>
-          <li class="socialIcon"><a href="https://www.instagram.com/ipmsistemas/"><img
-                src="./public/brand-instagram.png" alt="instagram"></a>
-          </li>
-          <li class="socialIcon "><a href="https://www.youtube.com/channel/UC6qR6SivTwGZGKbBz6tmJsQ"><img
-                src="./public/brand-youtube.png" alt="youtube"></a></li>
-          <li class="socialIcon"><a href="https://www.linkedin.com/company/ipmsistemas/"><img
-                src="./public/brand-linkedin.png" alt="linkedIn"></a></li>
-          <li class="socialIcon"><a href="https://twitter.com/ipmsistemas"><img src="./public/brand-x.png" alt="x"></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+    <FooterSection />
   </section>
 </template>
 <style>
@@ -164,10 +131,6 @@ const onSubmit = form.handleSubmit((values) => {
 
 .allfont {
   font-size: 1.5rem;
-}
-
-.socialIcon {
-  @apply h-[35px] w-[35px] sm:h-[50px] sm:w-[50px] hover:animate-pulse
 }
 
 .buttonSend {
