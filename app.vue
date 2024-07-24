@@ -32,6 +32,7 @@ const onSubmit = form.handleSubmit((values) => {
 </script>
 <template>
   <section>
+
     <Head>
       <Title>IPM Test</Title>
       <link rel="icon" href="public/favicon.png" type="image/x-icon" />
@@ -45,15 +46,12 @@ const onSubmit = form.handleSubmit((values) => {
         <div class="items-center">
           <ul class="text-sm sm:text-xl md:text-2xl xl:text-2xl flex space-x-5">
             <li class="navItem">
-              <img class="size-5" src="./public/point.png" alt="">
               <a href="#MainContent">Content</a>
             </li>
             <li class="navItem">
-              <img class="size-5" src="./public/point.png" alt="">
               <a href="#Forms">Form</a>
             </li>
             <li class="navItem">
-              <img class="size-5" src="./public/point.png" alt="">
               <a href="#Footer">Socials</a>
             </li>
           </ul>
@@ -169,7 +167,7 @@ const onSubmit = form.handleSubmit((values) => {
 }
 
 .socialIcon {
-  @apply h-[35px] w-[35px] sm:h-[50px] sm:w-[50px] border rounded-xl hover:animate-pulse
+  @apply h-[35px] w-[35px] sm:h-[50px] sm:w-[50px] hover:animate-pulse
 }
 
 .buttonSend {
